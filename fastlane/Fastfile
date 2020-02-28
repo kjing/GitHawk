@@ -28,11 +28,6 @@ end
 
 desc "Runs all the tests"
 lane :test do
-  # Remove existing reports
-  sh "rm ../../reports/*.xml || true" # Ignore errors if reports doesn't exist
-
-  # Scan options are in `Scanfile` so that they are applied
-  # correctly if you manually run `fastlane scan tests`
   scan(
     scheme: 'Freetime', # Project scheme name
     clean: true,        # Clean project folder before test execution
