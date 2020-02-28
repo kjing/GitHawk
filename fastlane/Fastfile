@@ -37,7 +37,7 @@ end
 
 
 # -- Global hooks
-# Use these carefully because they run before everything (even helper lanes)
+# Use these carefully because they run before everything.
 
 before_all do
   update_fastlane
