@@ -34,3 +34,17 @@ lane :test do
     device: 'iPhone 8'  # Simulator for testing
   )
 end
+
+
+# -- Global hooks
+# Use these carefully because they run before everything (even helper lanes)
+
+before_all do
+  update_fastlane
+end
+
+after_all do |lane|
+end
+
+error do |lane, exception|
+end
